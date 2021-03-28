@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.scss'
-import me from '../assets/images/me.jpg'
+import me from '../assets/images/me.png'
 import { ReactComponent as IconLinkedIn } from '../assets/icons/linkedin.svg'
 import { ReactComponent as IconGithub } from '../assets/icons/github.svg'
 import { ReactComponent as IconFacebook } from '../assets/icons/facebook.svg'
 import { ReactComponent as IconInstagram } from '../assets/icons/instagram.svg'
 import SkillList from '../components/SkillList'
 import ScrollIcon from '../components/ScrollIcon'
+import StaggeredImages from '../components/StaggeredImages'
+import Cursor from '../components/Cursor'
 
 export default class Home extends Component {
 
@@ -18,9 +20,25 @@ export default class Home extends Component {
     render() {
         return (
             <div className='home-container'>
-                <div className="wrapper">
 
-                    <header>
+                <Cursor />
+
+                <StaggeredImages />
+
+                <div className="hero">
+                    <div className="hero-main">
+                        <h1>Vipin Sharma</h1>
+                        <h2>
+                            Web Developer/Designer
+                        <div className="scroll-icon-wrapper">
+                                <ScrollIcon />
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+
+                <header>
+                    <div className="header-main">
                         <nav>
                             <ul>
                                 <li><Link onClick={(e) => { this.scrollToView('work') }}>Work</Link></li>
@@ -32,27 +50,14 @@ export default class Home extends Component {
                         <div className="location">
                             India <img src={'https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f3.svg'} alt="Indian-flag" />
                         </div>
-                    </header>
+                    </div>
+                </header>
 
-                    <main>
-
-                        <h1>Vipin Sharma</h1>
-                        <h2>
-                            Web Developer/Designer
-                            <div className="scroll-icon-wrapper">
-                                <ScrollIcon />
-                            </div>
-                        </h2>
-
-                    </main>
+                <div className="wrapper">
 
                     <section id='about' className='personal'>
 
                         <div className='my-image-container'>
-                            <div className="line line1"></div>
-                            <div className="line line2"></div>
-                            <div className="line line3"></div>
-                            <div className="line line4"></div>
                             <img className='my-image' src={me} alt="me, lol" />
                         </div>
 
