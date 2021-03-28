@@ -46,8 +46,8 @@
             .name {
                 overflow: hidden;
                 white-space: nowrap;
-                animation: moveToRight 0.3s;
-                -webkit-animation: moveToRight 0.3s;
+                animation: moveToRight 0.3s forwards;
+                -webkit-animation: moveToRight 0.3s forwards;
             }
 
             svg {
@@ -101,6 +101,92 @@
         0% {
             left: 4rem;
             font-size: 1rem;
+        }
+    }
+
+    // Icon animation
+    .skill-one {
+        &[data-icon="REACTJS"] {
+            svg {
+                animation: rotate 3s linear infinite;
+                -webkit-animation: rotate 3s linear infinite;
+            }
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(359deg);
+                    -webkit-transform: rotate(359deg);
+                    -moz-transform: rotate(359deg);
+                    -ms-transform: rotate(359deg);
+                    -o-transform: rotate(359deg);
+                }
+            }
+        }
+
+        &[data-icon="NO-SQL"] {
+            svg {
+                animation: noSql 2s linear infinite;
+                -webkit-animation: noSql 2s linear infinite;
+            }
+            @keyframes noSql {
+                0% {
+                    transform: rotate(-20deg);
+                    -webkit-transform: rotate(-20deg);
+                    -moz-transform: rotate(-20deg);
+                    -ms-transform: rotate(-20deg);
+                    -o-transform: rotate(-20deg);
+                }
+                50% {
+                    transform: rotate(20deg);
+                    -webkit-transform: rotate(20deg);
+                    -moz-transform: rotate(20deg);
+                    -ms-transform: rotate(20deg);
+                    -o-transform: rotate(20deg);
+                }
+                100% {
+                    transform: rotate(-20deg);
+                    -webkit-transform: rotate(-20deg);
+                    -moz-transform: rotate(-20deg);
+                    -ms-transform: rotate(-20deg);
+                    -o-transform: rotate(-20deg);
+                }
+            }
+        }
+
+        &[data-icon="SASS"] {
+            svg {
+                animation: sass 3s linear infinite;
+                -webkit-animation: sass 3s linear infinite;
+            }
+            @keyframes sass {
+                0% {
+                    transform: rotate(-15deg);
+                    -webkit-transform: rotate(-15deg);
+                    -moz-transform: rotate(-15deg);
+                    -ms-transform: rotate(-15deg);
+                    -o-transform: rotate(-15deg);
+                }
+                50% {
+                    transform: rotate(5deg);
+                    -webkit-transform: rotate(5deg);
+                    -moz-transform: rotate(5deg);
+                    -ms-transform: rotate(5deg);
+                    -o-transform: rotate(5deg);
+                }
+                100% {
+                    transform: rotate(-15deg);
+                    -webkit-transform: rotate(-15deg);
+                    -moz-transform: rotate(-15deg);
+                    -ms-transform: rotate(-15deg);
+                    -o-transform: rotate(-15deg);
+                }
+            }
         }
     }
 }

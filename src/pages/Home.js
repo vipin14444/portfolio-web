@@ -29,8 +29,8 @@ export default class Home extends Component {
                     <div className="hero-main">
                         <h1>Vipin Sharma</h1>
                         <h2>
-                            Web Developer/Designer
-                        <div className="scroll-icon-wrapper">
+                            Web Developer
+                            <div className="scroll-icon-wrapper">
                                 <ScrollIcon />
                             </div>
                         </h2>

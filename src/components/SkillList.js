@@ -105,8 +105,10 @@ class Skill extends Component {
         const { name, icon } = this.props.item
         const { css } = this.state
 
+        const dataIcon = name.replace(' ', '').toUpperCase()
+
         return (
-            <li className={`skill-one`} onMouseOver={this.addMakeSmallClass} onMouseLeave={this.removeMakeSmallClass}>
+            <li data-icon={dataIcon} className={`skill-one`} onMouseOver={this.addMakeSmallClass} onMouseLeave={this.removeMakeSmallClass}>
                 <div className={`name ${css}`}>{name}</div>
                 <div className="name-mask">{name}</div>
                 {icon}
