@@ -10,6 +10,7 @@ import SkillList from '../components/SkillList'
 import ScrollIcon from '../components/ScrollIcon'
 import StaggeredImages from '../components/StaggeredImages'
 import Cursor from '../components/Cursor'
+import WorkList from '../components/WorkList'
 
 export default class Home extends Component {
 
@@ -78,10 +79,10 @@ export default class Home extends Component {
                                 </h2>
 
                                 <ul>
-                                    <li><Link> <IconLinkedIn /> LinkedIn</Link></li>
-                                    <li><Link> <IconGithub /> Github</Link></li>
-                                    <li><Link> <IconFacebook /> Facebook</Link></li>
-                                    <li><Link> <IconInstagram /> Instagram</Link></li>
+                                    <li><Link className='icon-linkedin'> <IconLinkedIn /> LinkedIn</Link></li>
+                                    <li><Link className='icon-github'> <IconGithub /> Github</Link></li>
+                                    <li><Link className='icon-facebook'> <IconFacebook /> Facebook</Link></li>
+                                    <li><Link className='icon-instagram'> <IconInstagram /> Instagram</Link></li>
                                 </ul>
                             </div>
 
@@ -101,9 +102,8 @@ export default class Home extends Component {
 
                         <h2 className="h-lg uppercase">It ain't much, but it's honest work</h2>
 
-                        <div className="work-cards-container">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, tempore! Aut incidunt, voluptatum, iste repellat labore asperiores, sit error totam distinctio enim alias. Quam deleniti officia nemo amet repudiandae omnis dicta molestiae iusto soluta incidunt ut voluptas odio nam beatae molestias vel id debitis voluptatem voluptatum facere laudantium, iure neque. Eligendi veniam distinctio reiciendis at error quasi, illo culpa harum aut. Nam odio voluptatem est quisquam facere, accusamus numquam earum fugiat officia minima sit quaerat laudantium velit adipisci similique harum qui fugit corrupti consectetur totam tempore id voluptatibus! Hic aperiam alias magni ex eos quis accusamus porro a quod voluptas. Repellat quibusdam ea possimus perspiciatis, officia velit quasi fugiat cum quae odio dolorum optio fugit officiis, id saepe. Non nisi tempora quo. Perspiciatis, ea. Aperiam dolorem iure impedit perspiciatis, soluta sunt ipsam ipsum sed eligendi suscipit, earum molestias adipisci repellendus eos tenetur accusantium delectus inventore nihil sapiente nemo voluptate voluptatum? Harum deleniti cumque, rerum molestias unde nam iusto, reprehenderit eos magnam architecto excepturi culpa autem, sed expedita minima rem a nemo. Corrupti omnis eligendi aspernatur, eos voluptates, numquam, illum aliquid doloremque sint nobis molestias nulla. Iure, a eaque molestias dicta esse enim eius magnam quibusdam, amet, aperiam rerum ipsam! Fuga dicta, assumenda ad, iusto blanditiis ducimus fugit saepe accusantium obcaecati nulla culpa ex atque maiores aspernatur mollitia cumque eius totam similique perspiciatis! Minima exercitationem officia eveniet? A inventore nulla nemo quaerat beatae! Assumenda, natus impedit. Tempore nisi repudiandae, fuga iste magni aut est molestiae nesciunt inventore saepe iure ipsam ipsa asperiores modi laboriosam cum quam labore itaque doloremque ullam laudantium vel. Exercitationem unde illum perferendis dicta dolorem, magni architecto delectus pariatur accusantium perspiciatis cumque consequatur minima vero deleniti doloremque soluta iste. Officia aperiam laudantium placeat a quod nam debitis, qui accusantium laborum quis excepturi delectus sunt fugit provident dolorum possimus quaerat eligendi voluptate iste minus corrupti mollitia ipsam repellat impedit? Ipsum id dolore natus corrupti, veniam, modi architecto temporibus soluta aspernatur ex exercitationem maiores, minima excepturi illo dolores aliquam culpa possimus veritatis et eligendi dolorem dicta! Odit, dolorum magnam sapiente quos doloremque culpa. Quaerat, perspiciatis distinctio saepe tempore odit beatae iusto voluptatem. Vero suscipit tenetur ducimus eos, tempora quasi, quod nihil voluptates natus ipsam quos aliquid quia repellendus cumque minus quam totam soluta non, blanditiis perferendis repudiandae? Voluptates odit sint eos. Tempore, officiis inventore perspiciatis corporis quidem quae ipsum doloribus vitae sed odio, necessitatibus fugit maxime repellat ducimus reprehenderit similique!
-                        </div>
+                        <WorkList />
+
                     </section>
 
                     <section id='contact' className="contact">

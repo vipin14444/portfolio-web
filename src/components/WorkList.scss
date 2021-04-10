@@ -1,0 +1,75 @@
+.worklist-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.work-card-container {
+    width: 100%;
+
+    .bg-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+    }
+
+    .top {
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            font-size: 2rem;
+            z-index: 10;
+            opacity: 0;
+            transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -ms-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        padding: 0.5rem 0;
+        font-size: 1.3rem;
+        align-items: center;
+
+        .desc {
+            font-weight: bold;
+        }
+
+        .more-arrow {
+            margin-left: auto;
+            font-size: 1rem;
+        }
+    }
+
+    $clip: 7%;
+
+    &:hover {
+        .top {
+            h2 {
+                opacity: 1;
+                top: 10%;
+            }
+        }
+
+        .bg-img {
+            clip-path: polygon($clip $clip, 100%-$clip $clip, 100%-$clip 100%-$clip, $clip 100%-$clip);
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+        }
+    }
+}
