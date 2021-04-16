@@ -11,6 +11,8 @@ import ScrollIcon from '../components/ScrollIcon'
 import StaggeredImages from '../components/StaggeredImages'
 import Cursor from '../components/Cursor'
 import WorkList from '../components/WorkList'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 export default class Home extends Component {
 
@@ -106,21 +108,11 @@ export default class Home extends Component {
 
                     </section>
 
-                    <section id='contact' className="contact">
-
-                        <h2 className="h-lg uppercase">Like my work? Want to get in touch with me?</h2>
-
-                        <div className="contact-link">✉️ vipin.sharma3039@gmail.com</div>
-                        <div className="contact-link">📱 +91-9716753039</div>
-                    </section>
+                    <Contact />
 
                 </div>
 
-                <footer>
-                    <div className="footer-main">
-                        Made with ❤️ by Vipin Sharma
-                    </div>
-                </footer>
+                <Footer />
             </div>
         )
     }

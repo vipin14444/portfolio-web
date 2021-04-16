@@ -4,6 +4,7 @@ import work2 from '../assets/images/work/work2.webp'
 import work5 from '../assets/images/work/work5.png'
 import work6 from '../assets/images/work/work6.png'
 import work7 from '../assets/images/work/work7.png'
+import { Link } from 'react-router-dom'
 
 export default class WorkList extends Component {
     constructor(props) {
@@ -12,21 +13,25 @@ export default class WorkList extends Component {
         this.state = {
             workItems: [
                 {
+                    id: 'icurious',
                     title: 'iCurious',
                     cardImage: work7,
                     description: 'iCurious: E-Learning Platform'
                 },
                 {
+                    id: 'ninja',
                     title: 'Ninja',
                     cardImage: work2,
                     description: 'Ninja: Online events tracker'
                 },
                 {
-                    title: 'Indian App Store',
+                    id: 'my-payments',
+                    title: 'My Payments',
                     cardImage: work5,
-                    description: 'Indian App Store: For Indian Apps'
+                    description: 'Payments Tracker'
                 },
                 {
+                    id: 'commit-ed',
                     title: 'CommitEd',
                     cardImage: work6,
                     description: 'CommitEd: E-Learning Platform'
@@ -57,7 +62,7 @@ class WorkCard extends Component {
         const { item } = this.props
 
         return (
-            <div className='work-card-container'>
+            <Link to={`/work/${item.id}`} className='work-card-container'>
                 <div className="top">
                     <h2>{item.title}</h2>
                     <div style={{ backgroundImage: `url(${item.cardImage})` }} className="bg-img"></div>
@@ -66,7 +71,7 @@ class WorkCard extends Component {
                     <div className="desc">{item.description}</div>
                     <div className="more-arrow">More</div>
                 </div>
-            </div>
+            </Link>
         )
     }
 }

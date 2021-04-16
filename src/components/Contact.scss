@@ -1,0 +1,24 @@
+.contact {
+    margin-top: 5rem;
+    h2 {
+        line-height: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-link {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: bolder;
+        padding: 2rem;
+    }
+
+    .contact-link + .contact-link {
+        border-top: 1px solid rgb(28, 28, 28);
+    }
+}
+
+.contact.work-contact {
+    h2 {
+        text-align: center;
+    }
+}
