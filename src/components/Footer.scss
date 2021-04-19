@@ -1,3 +1,5 @@
+@import "../shared/theme.scss";
+
 footer {
     background-color: rgb(12, 12, 12);
 
@@ -7,5 +9,9 @@ footer {
         color: white;
         padding: 2rem;
         text-align: center;
+
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }
     }
 }

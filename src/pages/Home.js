@@ -81,10 +81,10 @@ export default class Home extends Component {
                                 </h2>
 
                                 <ul>
-                                    <li><Link className='icon-linkedin'> <IconLinkedIn /> LinkedIn</Link></li>
-                                    <li><Link className='icon-github'> <IconGithub /> Github</Link></li>
-                                    <li><Link className='icon-facebook'> <IconFacebook /> Facebook</Link></li>
-                                    <li><Link className='icon-instagram'> <IconInstagram /> Instagram</Link></li>
+                                    <li><a href={'https://www.linkedin.com/in/vipin14444/'} className='icon-linkedin'> <IconLinkedIn /> LinkedIn</a></li>
+                                    <li><a href={'https://github.com/vipin14444'} className='icon-github'> <IconGithub /> Github</a></li>
+                                    <li><a href={'https://www.facebook.com/vipin14444'} className='icon-facebook'> <IconFacebook /> Facebook</a></li>
+                                    <li><a href={'https://www.instagram.com/vipin14444/'} className='icon-instagram'> <IconInstagram /> Instagram</a></li>
                                 </ul>
                             </div>
 

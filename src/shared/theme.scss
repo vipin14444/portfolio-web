@@ -17,10 +17,24 @@ body {
     font-size: 4rem;
 }
 
-.h-md {
+.h-sm {
     font-size: 3rem;
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .h-lg {
+        font-size: 4rem;
+    }
+    
+    .h-md {
+        font-size: 3rem;
+    }
+
+    .h-sm {
+        font-size: 2rem;
+    }
 }

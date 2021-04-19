@@ -10,6 +10,10 @@
     -o-border-radius: 50%;
     pointer-events: none;
     transition-timing-function: ease-out;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .ring1 {

@@ -7,11 +7,11 @@ import './Work.scss'
 import { getWorkItem } from './WorkItems'
 
 export default class Work extends Component {
-   
+
     componentDidMount() {
         this.main.scrollIntoView()
     }
-   
+
     render() {
         return (
             <div ref={el => this.main = el} className='work-container'>
@@ -65,25 +65,27 @@ class WorkMain extends Component {
             <div className='workmain-container'>
                 <main>
                     <div className="part-1">
-                        <h1>{data.title}</h1>
-                        <div style={{ backgroundImage: `url(${data.titleImage})` }} className="bg-img"></div>
-                        <div className="meta-info">
-                            <div className="field">
-                                <div className="label">Project Type</div>
-                                <div className="value">{data.projectType}</div>
+                        <div className="part-1-wrapper">
+                            <h1>{data.title}</h1>
+                            <div style={{ backgroundImage: `url(${data.titleImage})` }} className="bg-img"></div>
+                            <div className="meta-info">
+                                <div className="field">
+                                    <div className="label">Project Type</div>
+                                    <div className="value">{data.projectType}</div>
+                                </div>
+                                <div className="field">
+                                    <div className="label">Role</div>
+                                    <div className="value">{data.role}</div>
+                                </div>
                             </div>
-                            <div className="field">
-                                <div className="label">Role</div>
-                                <div className="value">{data.role}</div>
-                            </div>
-                        </div>
 
-                        <div className="project-desc">
-                            {
-                                data.projectDescription.map((obj, i) => (
-                                    <p key={i}>{obj}</p>
-                                ))
-                            }
+                            <div className="project-desc">
+                                {
+                                    data.projectDescription.map((obj, i) => (
+                                        <p key={i}>{obj}</p>
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
 
