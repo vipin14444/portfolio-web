@@ -10,6 +10,9 @@ import { ReactComponent as IconNodejs } from '../assets/icons/nodejs.svg'
 import { ReactComponent as IconDotnetCore } from '../assets/icons/core.svg'
 import { ReactComponent as IconSQL } from '../assets/icons/db.svg'
 import { ReactComponent as IconNoSql } from '../assets/icons/mongodb.svg'
+import gsap from 'gsap/gsap-core'
+import { CSSRulePlugin } from 'gsap/all'
+gsap.registerPlugin(CSSRulePlugin);
 
 export default class SkillList extends Component {
 
@@ -89,7 +92,7 @@ class Skill extends Component {
     }
 
 
-    addMakeSmallClass = () => {
+    addMakeSmallClass = (name) => {
         this.setState({
             css: 'move-to-right'
         })
@@ -108,7 +111,7 @@ class Skill extends Component {
         const dataIcon = name.replace(' ', '').toUpperCase()
 
         return (
-            <li data-icon={dataIcon} className={`skill-one`} onMouseOver={this.addMakeSmallClass} onMouseLeave={this.removeMakeSmallClass}>
+            <li data-icon={dataIcon} className={`skill-one`} onMouseOver={() => { this.addMakeSmallClass(dataIcon) }} onMouseLeave={this.removeMakeSmallClass}>
                 <div className={`name ${css}`}>{name}</div>
                 <div className="name-mask">{name}</div>
                 {icon}

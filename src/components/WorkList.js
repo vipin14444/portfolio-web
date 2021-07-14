@@ -4,6 +4,8 @@ import work2 from '../assets/images/work/work2.webp'
 import work5 from '../assets/images/work/work5.png'
 import work6 from '../assets/images/work/work6.png'
 import work7 from '../assets/images/work/work7.png'
+import work8 from '../assets/images/work/work8.png'
+import work9 from '../assets/images/work/work9.png'
 import { Link } from 'react-router-dom'
 
 export default class WorkList extends Component {
@@ -12,6 +14,18 @@ export default class WorkList extends Component {
 
         this.state = {
             workItems: [
+                {
+                    id: 'closeapp',
+                    title: 'CloseAPP',
+                    cardImage: work9,
+                    description: 'CloseAPP: Audio Based Social Media'
+                },
+                {
+                    id: 'walkdesignstudio',
+                    title: 'Walk Design Studio',
+                    cardImage: work8,
+                    description: 'Walk Design Studio: Business Website'
+                },
                 {
                     id: 'icurious',
                     title: 'iCurious',
