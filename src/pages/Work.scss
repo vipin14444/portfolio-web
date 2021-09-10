@@ -24,14 +24,20 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 60ch;
+                    max-width: 60ch;
+                    width: 100%;
 
                     h1 {
-                        font-size: 5rem;
+                        font-size: 4rem;
+                        line-height: 4rem;
                         text-transform: uppercase;
                         text-align: center;
-                        line-height: 4.5rem;
                         margin-bottom: 1rem;
+
+                        @media screen and (max-width: 500px) {
+                            font-size: 15vw;
+                            line-height: 15vw;
+                        }
                     }
 
                     .bg-img {
